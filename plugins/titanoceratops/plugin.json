@@ -1,0 +1,34 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "titanoceratops",
+  "version": "0.1.0",
+  "description": "Open, inspect, validate, and analyze chromatin-trace tables using Traceratops.",
+  "author": {
+    "name": "Your Name"
+  },
+  "repository": "https://github.com/YOUR-GITHUB-NAME/titanoceratops-plugins",
+  "license": "MIT",
+  "keywords": [
+    "traceratops",
+    "chromatin tracing",
+    "DNA-FISH",
+    "Hi-M"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Titanoceratops",
+        "shortDescription": "Analyze chromatin-trace tables with Traceratops",
+        "category": "Developer Tools",
+        "capabilities": [
+          "Read",
+          "Write"
+        ],
+        "defaultPrompt": [
+          "Open this chromatin trace table and summarize it.",
+          "Validate this table and report its traces and barcodes."
+        ]
+      }
+    }
+  }
+}

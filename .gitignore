@@ -216,5 +216,44 @@ marimo/_static/
 marimo/_lsp/
 __marimo__/
 
+
+# Virtual environments
+.venv/
+venv/
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Environment and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Local MCP configuration
+mcp.local.json
+
+# Data and generated results
+workspace/
+Results/
+output/
+downloads/
+*.ecsv
+*.csv
+*.parquet
+*.npy
+*.npz
+
+# Editors and operating systems
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
 # Streamlit
 .streamlit/secrets.toml

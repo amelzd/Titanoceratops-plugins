@@ -1,0 +1,33 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "fourdn-data",
+  "version": "0.1.0",
+  "description": "Search 4DN chromatin-tracing datasets, inspect records, list FOF-CT files, and download selected files.",
+  "author": {
+    "name": "Your Name"
+  },
+  "repository": "https://github.com/YOUR-GITHUB-NAME/titanoceratops-plugins",
+  "license": "MIT",
+  "keywords": [
+    "4DN",
+    "chromatin tracing",
+    "DNA-FISH",
+    "FOF-CT"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "4DN Chromatin Data",
+        "shortDescription": "Find and download 4DN chromatin-tracing data",
+        "category": "Developer Tools",
+        "capabilities": [
+          "Read"
+        ],
+        "defaultPrompt": [
+          "Search 4DN for chromatin-tracing datasets.",
+          "Inspect this 4DN item and list its FOF-CT files."
+        ]
+      }
+    }
+  }
+}

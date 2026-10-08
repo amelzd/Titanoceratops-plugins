@@ -1,0 +1,32 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "registration-warpfield",
+  "version": "0.1.0",
+  "description": "Inspect and register 3D microscopy images, inspect WarpMaps, and correct localization coordinates with GPU Warpfield deformation fields.",
+  "license": "GPL-3.0-only",
+  "keywords": [
+    "image registration",
+    "warpfield",
+    "microscopy",
+    "DNA-FISH",
+    "Hi-M"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Registration Warpfield",
+        "shortDescription": "Register 3D microscopy images",
+        "longDescription": "Inspect and register 3D microscopy TIFF volumes with GPU Warpfield deformation maps, perform registration quality control, and apply barcode-matched maps to localization tables.",
+        "developerName": "Titanoceratops",
+        "category": "Developer Tools",
+        "capabilities": ["Read", "Write", "GPU computation"],
+        "defaultPrompt": [
+          "Inspect these microscopy volumes before registration.",
+          "Register this moving volume to the reference and inspect the WarpMap.",
+          "Apply these barcode deformation fields to my localization table."
+        ]
+      }
+    }
+  }
+}
+

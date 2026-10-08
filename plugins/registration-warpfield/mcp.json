@@ -1,0 +1,14 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "registration-warpfield": {
+      "type": "stdio",
+      "command": "/home/zidoum/Repositories/RegistrationWarpfield-mcp/.venv/bin/python",
+      "args": [
+        "/home/zidoum/Repositories/RegistrationWarpfield-mcp/server.py"
+      ],
+      "cwd": "/home/zidoum/Repositories/RegistrationWarpfield-mcp"
+    }
+  }
+}
+

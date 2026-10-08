@@ -1,0 +1,22 @@
+{
+  "name": "titanoceratops-plugins",
+  "interface": {
+    "displayName": "Titanoceratops Plugins"
+  },
+  "plugins": [
+    {
+      "name": "fourdn-data",
+      "source": {
+        "source": "local",
+        "path": "./plugins/fourdn-data"
+      }
+    },
+    {
+      "name": "titanoceratops",
+      "source": {
+        "source": "local",
+        "path": "./plugins/titanoceratops"
+      }
+    }
+  ]
+}

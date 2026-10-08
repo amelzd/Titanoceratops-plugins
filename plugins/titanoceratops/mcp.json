@@ -1,0 +1,9 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "titanoceratops": {
+      "type": "streamable-http",
+      "url": "https://titanoceratops.your-domain.org/mcp"
+    }
+  }
+}
